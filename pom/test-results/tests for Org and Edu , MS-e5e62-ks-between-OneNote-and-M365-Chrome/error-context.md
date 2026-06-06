@@ -1,0 +1,348 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: tests for Org and Edu , MSA accounts\MSA Tests\MSATests for Chrome and Edge.spec.ts >> Tests for het_sdf@hotmail.com >> TC2 - Compare top 5 notebooks between OneNote and M365
+- Location: pom\tests for Org and Edu , MSA accounts\MSA Tests\MSATests for Chrome and Edge.spec.ts:67:9
+
+# Error details
+
+```
+Test timeout of 200000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main [ref=e5]:
+    - navigation [ref=e7]:
+      - button "Expand navigation" [ref=e10] [cursor=pointer]:
+        - img [ref=e12]
+        - img [ref=e14]
+      - generic [ref=e18]:
+        - menuitem "New chat" [ref=e19] [cursor=pointer]:
+          - img [ref=e21]
+        - menuitem "Search" [ref=e23] [cursor=pointer]:
+          - img [ref=e25]
+        - menuitem "Create" [ref=e27] [cursor=pointer]:
+          - img [ref=e29]
+        - menuitem "Apps" [ref=e31] [cursor=pointer]:
+          - img [ref=e33]
+      - button "Het Patel" [ref=e39] [cursor=pointer]:
+        - img:
+          - generic: HP
+    - main [ref=e44]:
+      - main [ref=e46]:
+        - button "More" [ref=e48] [cursor=pointer]:
+          - img [ref=e50]
+        - generic [ref=e54]:
+          - heading "What can I help you find?" [level=1] [ref=e56]
+          - generic [ref=e62]:
+            - button "search" [ref=e63] [cursor=pointer]:
+              - img [ref=e65]
+            - combobox "Search" [active] [ref=e68]
+          - generic [ref=e69]:
+            - heading "Quick access" [level=2] [ref=e71]
+            - generic [ref=e73]:
+              - generic [ref=e74]:
+                - tablist [ref=e75]:
+                  - tab "Recent" [selected] [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78]: Recent
+                  - tab "Shared" [ref=e79] [cursor=pointer]:
+                    - generic [ref=e80]: Shared
+                  - tab "Favorites" [ref=e81] [cursor=pointer]:
+                    - generic [ref=e82]: Favorites
+                - button "Upload" [ref=e87]:
+                  - img [ref=e89]
+                  - text: Upload
+              - tabpanel "Recent" [ref=e91]:
+                - generic [ref=e92]:
+                  - tablist [ref=e98]:
+                    - tab "All filters" [selected] [ref=e99]:
+                      - generic [ref=e100]:
+                        - img [ref=e102]
+                        - generic [ref=e105]: All
+                    - tab "Type" [ref=e106]:
+                      - button "Type" [ref=e108] [cursor=pointer]:
+                        - generic [ref=e109]:
+                          - generic [ref=e111]: Type
+                          - img [ref=e113]
+                    - tab "Notebooks" [ref=e115]:
+                      - generic "Notebooks" [ref=e116]:
+                        - img [ref=e118]
+                        - generic "Notebooks" [ref=e126]
+                    - tab "OneNote" [ref=e127]:
+                      - generic "OneNote" [ref=e128]:
+                        - img [ref=e130]
+                        - generic "OneNote" [ref=e140]
+                    - tab "Add a content filter" [ref=e141]:
+                      - generic [ref=e142]: 
+                  - generic "Quick access" [ref=e143]:
+                    - table "Recently opened" [ref=e144]:
+                      - row "Name Modified Activity" [ref=e145]:
+                        - columnheader "Name"
+                        - columnheader "Modified"
+                        - columnheader "Activity"
+                      - generic [ref=e146]:
+                        - rowgroup [ref=e148]:
+                          - row "Note_20260605_124445" [ref=e149]:
+                            - cell "Name Note_20260605_124445" [ref=e150]:
+                              - link "Note_20260605_124445" [ref=e151] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260605_124445
+                                - img "OneNote" [ref=e155]
+                              - generic [ref=e156]:
+                                - link "Note_20260605_124445" [ref=e158] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260605_124445
+                                  - generic "Note_20260605_124445" [ref=e159]:
+                                    - generic [ref=e161]: Note_20260605_124445
+                                - generic "Your OneDrive > Documents" [ref=e163]:
+                                  - generic [ref=e164]: Your OneDrive > Documents
+                              - button "More actions" [ref=e165]:
+                                - img [ref=e169]
+                            - gridcell "Opened 4h" [ref=e171]: 4h
+                            - cell "Activity"
+                        - rowgroup [ref=e173]:
+                          - row "Note_20260605_122513" [ref=e174]:
+                            - cell "Name Note_20260605_122513" [ref=e175]:
+                              - link "Note_20260605_122513" [ref=e176] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260605_122513
+                                - img "OneNote" [ref=e180]
+                              - generic [ref=e181]:
+                                - link "Note_20260605_122513" [ref=e183] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260605_122513
+                                  - generic "Note_20260605_122513" [ref=e184]:
+                                    - generic [ref=e186]: Note_20260605_122513
+                                - generic "Your OneDrive > Documents" [ref=e188]:
+                                  - generic [ref=e189]: Your OneDrive > Documents
+                              - button "More actions" [ref=e190]:
+                                - img [ref=e194]
+                            - gridcell "Opened 8h" [ref=e196]: 8h
+                            - cell "Activity"
+                        - rowgroup [ref=e198]:
+                          - row "Note_20260605_112820" [ref=e199]:
+                            - cell "Name Note_20260605_112820" [ref=e200]:
+                              - link "Note_20260605_112820" [ref=e201] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260605_112820
+                                - img "OneNote" [ref=e205]
+                              - generic [ref=e206]:
+                                - link "Note_20260605_112820" [ref=e208] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260605_112820
+                                  - generic "Note_20260605_112820" [ref=e209]:
+                                    - generic [ref=e211]: Note_20260605_112820
+                                - generic "Your OneDrive > Documents" [ref=e213]:
+                                  - generic [ref=e214]: Your OneDrive > Documents
+                              - button "More actions" [ref=e215]:
+                                - img [ref=e219]
+                            - gridcell "Opened 9h" [ref=e221]: 9h
+                            - cell "Activity"
+                        - rowgroup [ref=e223]:
+                          - row "Note_20260603_113039" [ref=e224]:
+                            - cell "Name Note_20260603_113039" [ref=e225]:
+                              - link "Note_20260603_113039" [ref=e226] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_113039
+                                - img "OneNote" [ref=e230]
+                              - generic [ref=e231]:
+                                - link "Note_20260603_113039" [ref=e233] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_113039
+                                  - generic "Note_20260603_113039" [ref=e234]:
+                                    - generic [ref=e236]: Note_20260603_113039
+                                - generic "Your OneDrive > Documents" [ref=e238]:
+                                  - generic [ref=e239]: Your OneDrive > Documents
+                              - button "More actions" [ref=e240]:
+                                - img [ref=e244]
+                            - gridcell "Opened Yesterday" [ref=e246]: Yesterday
+                            - cell "Activity"
+                        - rowgroup [ref=e248]:
+                          - row "Note_20260604_121253" [ref=e249]:
+                            - cell "Name Note_20260604_121253" [ref=e250]:
+                              - link "Note_20260604_121253" [ref=e251] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260604_121253
+                                - img "OneNote" [ref=e255]
+                              - generic [ref=e256]:
+                                - link "Note_20260604_121253" [ref=e258] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260604_121253
+                                  - generic "Note_20260604_121253" [ref=e259]:
+                                    - generic [ref=e261]: Note_20260604_121253
+                                - generic "Your OneDrive > Documents" [ref=e263]:
+                                  - generic [ref=e264]: Your OneDrive > Documents
+                              - button "More actions" [ref=e265]:
+                                - img [ref=e269]
+                            - gridcell "Opened Yesterday" [ref=e271]: Yesterday
+                            - cell "Activity"
+                        - rowgroup [ref=e273]:
+                          - row "Note_20260604_115633" [ref=e274]:
+                            - cell "Name Note_20260604_115633" [ref=e275]:
+                              - link "Note_20260604_115633" [ref=e276] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260604_115633
+                                - img "OneNote" [ref=e280]
+                              - generic [ref=e281]:
+                                - link "Note_20260604_115633" [ref=e283] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260604_115633
+                                  - generic "Note_20260604_115633" [ref=e284]:
+                                    - generic [ref=e286]: Note_20260604_115633
+                                - generic "Your OneDrive > Documents" [ref=e288]:
+                                  - generic [ref=e289]: Your OneDrive > Documents
+                              - button "More actions" [ref=e290]:
+                                - img [ref=e294]
+                            - gridcell "Opened Yesterday" [ref=e296]: Yesterday
+                            - cell "Activity"
+                        - rowgroup [ref=e298]:
+                          - row "Note_20260604_115133" [ref=e299]:
+                            - cell "Name Note_20260604_115133" [ref=e300]:
+                              - link "Note_20260604_115133" [ref=e301] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260604_115133
+                                - img "OneNote" [ref=e305]
+                              - generic [ref=e306]:
+                                - link "Note_20260604_115133" [ref=e308] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260604_115133
+                                  - generic "Note_20260604_115133" [ref=e309]:
+                                    - generic [ref=e311]: Note_20260604_115133
+                                - generic "Your OneDrive > Documents" [ref=e313]:
+                                  - generic [ref=e314]: Your OneDrive > Documents
+                              - button "More actions" [ref=e315]:
+                                - img [ref=e319]
+                            - gridcell "Opened Yesterday" [ref=e321]: Yesterday
+                            - cell "Activity"
+                        - rowgroup [ref=e323]:
+                          - row "Note_20260603_115917" [ref=e324]:
+                            - cell "Name Note_20260603_115917" [ref=e325]:
+                              - link "Note_20260603_115917" [ref=e326] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_115917
+                                - img "OneNote" [ref=e330]
+                              - generic [ref=e331]:
+                                - link "Note_20260603_115917" [ref=e333] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_115917
+                                  - generic "Note_20260603_115917" [ref=e334]:
+                                    - generic [ref=e336]: Note_20260603_115917
+                                - generic "Your OneDrive > Documents" [ref=e338]:
+                                  - generic [ref=e339]: Your OneDrive > Documents
+                              - button "More actions" [ref=e340]:
+                                - img [ref=e344]
+                            - gridcell "Opened Yesterday" [ref=e346]: Yesterday
+                            - cell "Activity"
+                        - rowgroup [ref=e348]:
+                          - row "Note_20260604_114015" [ref=e349]:
+                            - cell "Name Note_20260604_114015" [ref=e350]:
+                              - link "Note_20260604_114015" [ref=e351] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260604_114015
+                                - img "OneNote" [ref=e355]
+                              - generic [ref=e356]:
+                                - link "Note_20260604_114015" [ref=e358] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260604_114015
+                                  - generic "Note_20260604_114015" [ref=e359]:
+                                    - generic [ref=e361]: Note_20260604_114015
+                                - generic "Your OneDrive > Documents" [ref=e363]:
+                                  - generic [ref=e364]: Your OneDrive > Documents
+                              - button "More actions" [ref=e365]:
+                                - img [ref=e369]
+                            - gridcell "Opened Yesterday" [ref=e371]: Yesterday
+                            - cell "Activity"
+                        - rowgroup [ref=e373]:
+                          - row "Note_20260603_113011" [ref=e374]:
+                            - cell "Name Note_20260603_113011" [ref=e375]:
+                              - link "Note_20260603_113011" [ref=e376] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_113011
+                                - img "OneNote" [ref=e380]
+                              - generic [ref=e381]:
+                                - link "Note_20260603_113011" [ref=e383] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_113011
+                                  - generic "Note_20260603_113011" [ref=e384]:
+                                    - generic [ref=e386]: Note_20260603_113011
+                                - generic "Your OneDrive > Documents" [ref=e388]:
+                                  - generic [ref=e389]: Your OneDrive > Documents
+                              - button "More actions" [ref=e390]:
+                                - img [ref=e394]
+                            - gridcell "Opened Wed" [ref=e396]: Wed
+                            - cell "Activity"
+                        - rowgroup [ref=e398]:
+                          - row "Note_20260603_112624" [ref=e399]:
+                            - cell "Name Note_20260603_112624" [ref=e400]:
+                              - link "Note_20260603_112624" [ref=e401] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_112624
+                                - img "OneNote" [ref=e405]
+                              - generic [ref=e406]:
+                                - link "Note_20260603_112624" [ref=e408] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_112624
+                                  - generic "Note_20260603_112624" [ref=e409]:
+                                    - generic [ref=e411]: Note_20260603_112624
+                                - generic "Your OneDrive > Documents" [ref=e413]:
+                                  - generic [ref=e414]: Your OneDrive > Documents
+                              - button "More actions" [ref=e415]:
+                                - img [ref=e419]
+                            - gridcell "Opened Wed" [ref=e421]: Wed
+                            - cell "Activity"
+                        - rowgroup [ref=e423]:
+                          - row "Note_20260603_111417" [ref=e424]:
+                            - cell "Name Note_20260603_111417" [ref=e425]:
+                              - link "Note_20260603_111417" [ref=e426] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_111417
+                                - img "OneNote" [ref=e430]
+                              - generic [ref=e431]:
+                                - link "Note_20260603_111417" [ref=e433] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_111417
+                                  - generic "Note_20260603_111417" [ref=e434]:
+                                    - generic [ref=e436]: Note_20260603_111417
+                                - generic "Your OneDrive > Documents" [ref=e438]:
+                                  - generic [ref=e439]: Your OneDrive > Documents
+                              - button "More actions" [ref=e440]:
+                                - img [ref=e444]
+                            - gridcell "Opened Wed" [ref=e446]: Wed
+                            - cell "Activity"
+                        - rowgroup [ref=e448]:
+                          - row "Note_20260601_144556" [ref=e449]:
+                            - cell "Name Note_20260601_144556" [ref=e450]:
+                              - link "Note_20260601_144556" [ref=e451] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260601_144556
+                                - img "OneNote" [ref=e455]
+                              - generic [ref=e456]:
+                                - link "Note_20260601_144556" [ref=e458] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260601_144556
+                                  - generic "Note_20260601_144556" [ref=e459]:
+                                    - generic [ref=e461]: Note_20260601_144556
+                                - generic "Your OneDrive > Documents" [ref=e463]:
+                                  - generic [ref=e464]: Your OneDrive > Documents
+                              - button "More actions" [ref=e465]:
+                                - img [ref=e469]
+                            - gridcell "Opened Wed" [ref=e471]: Wed
+                            - cell "Activity"
+                        - rowgroup [ref=e473]:
+                          - row "Note_20260601_145357" [ref=e474]:
+                            - cell "Name Note_20260601_145357" [ref=e475]:
+                              - link "Note_20260601_145357" [ref=e476] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260601_145357
+                                - img "OneNote" [ref=e480]
+                              - generic [ref=e481]:
+                                - link "Note_20260601_145357" [ref=e483] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260601_145357
+                                  - generic "Note_20260601_145357" [ref=e484]:
+                                    - generic [ref=e486]: Note_20260601_145357
+                                - generic "Your OneDrive > Documents" [ref=e488]:
+                                  - generic [ref=e489]: Your OneDrive > Documents
+                              - button "More actions" [ref=e490]:
+                                - img [ref=e494]
+                            - gridcell "Opened Wed" [ref=e496]: Wed
+                            - cell "Activity"
+                        - rowgroup [ref=e498]:
+                          - row "Note_20260603_104955" [ref=e499]:
+                            - cell "Name Note_20260603_104955" [ref=e500]:
+                              - link "Note_20260603_104955" [ref=e501] [cursor=pointer]:
+                                - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_104955
+                                - img "OneNote" [ref=e505]
+                              - generic [ref=e506]:
+                                - link "Note_20260603_104955" [ref=e508] [cursor=pointer]:
+                                  - /url: https://d.docs.live.net/EEFEBB15860DA463/Documents/Note_20260603_104955
+                                  - generic "Note_20260603_104955" [ref=e509]:
+                                    - generic [ref=e511]: Note_20260603_104955
+                                - generic "Your OneDrive > Documents" [ref=e513]:
+                                  - generic [ref=e514]: Your OneDrive > Documents
+                              - button "More actions" [ref=e515]:
+                                - img [ref=e519]
+                            - gridcell "Opened Wed" [ref=e521]: Wed
+                            - cell "Activity"
+  - tooltip "More" [ref=e525]: More
+```

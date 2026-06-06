@@ -1,0 +1,243 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: tests for Org and Edu , MSA accounts\accountTests.spec.ts >> Tests for t-deepthi@edunotebook.onmicrosoft.com >> TC3 - Auth Functionality
+- Location: pom\tests for Org and Edu , MSA accounts\accountTests.spec.ts:151:9
+
+# Error details
+
+```
+Test timeout of 200000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- iframe [active] [ref=e2]:
+  - application [active] [ref=f13e1]:
+    - generic [ref=f13e6]:
+      - generic [ref=f13e7]:
+        - toolbar "Header" [ref=f13e10]:
+          - banner [ref=f13e13]:
+            - button "App launcher" [ref=f13e16] [cursor=pointer]: 
+            - generic [ref=f13e24]:
+              - generic [ref=f13e25]:
+                - generic [ref=f13e29]:
+                  - img [ref=f13e31]
+                  - img [ref=f13e39]
+                - button "Note_20260605_193736" [ref=f13e52] [cursor=pointer]:
+                  - generic [ref=f13e53]: Note_20260605_193736
+                  - generic [ref=f13e55]: 
+              - generic [ref=f13e57]:
+                - button "Settings" [ref=f13e60] [cursor=pointer]:
+                  - generic [ref=f13e61]: 
+                - button "You have 0 new OneNote notification" [ref=f13e64] [cursor=pointer]:
+                  - generic [ref=f13e65]: 
+            - generic [ref=f13e66]:
+              - button "Account manager for Deepthi R" [ref=f13e68] [cursor=pointer]:
+                - generic [ref=f13e78]: DR
+              - generic: 
+        - toolbar "Ribbon" [ref=f13e92]:
+          - generic [ref=f13e93]:
+            - generic [ref=f13e97]:
+              - generic [ref=f13e98]:
+                - button "File" [ref=f13e100]:
+                  - generic [ref=f13e102]: File
+                - generic "Ribbon Tabs" [ref=f13e105]:
+                  - tablist [ref=f13e106]:
+                    - tab "Home" [selected] [ref=f13e107]:
+                      - generic [ref=f13e110]: Home
+                    - tab "Insert" [ref=f13e111]:
+                      - generic [ref=f13e114]: Insert
+                    - tab "Draw" [ref=f13e115]:
+                      - generic [ref=f13e118]: Draw
+                    - tab "View" [ref=f13e119]:
+                      - generic [ref=f13e122]: View
+                    - tab "Help" [ref=f13e123]:
+                      - generic [ref=f13e126]: Help
+              - toolbar "Additional Controls" [ref=f13e129]:
+                - generic [ref=f13e134]:
+                  - img [ref=f13e136]
+                  - textbox "Tell me what you want to do (Alt+Q)" [ref=f13e139]:
+                    - /placeholder: Tell me what you want to do
+                  - marquee
+                - generic [ref=f13e140]:
+                  - button "Sync Status" [ref=f13e144]:
+                    - img [ref=f13e147]
+                  - button "Mode Menu;Editing Selected" [ref=f13e153]:
+                    - img [ref=f13e156]
+                    - generic [ref=f13e159]: Editing
+                    - img [ref=f13e163]
+                  - button "Share" [ref=f13e168]:
+                    - img [ref=f13e171]
+                    - generic [ref=f13e174]: Share
+                    - img [ref=f13e177]
+            - tabpanel "Home" [ref=f13e181]:
+              - generic [ref=f13e186]:
+                - generic [ref=f13e187]:
+                  - generic:
+                    - generic:
+                      - group "Undo/Redo/Clipboard" [disabled]:
+                        - group [disabled]:
+                          - button "Undo" [disabled]:
+                            - generic:
+                              - generic:
+                                - img
+                          - button "Undo Show More Options" [disabled]:
+                            - generic:
+                              - generic:
+                                - img
+                        - generic:
+                          - button "Clipboard" [disabled]:
+                            - generic:
+                              - generic:
+                                - img
+                            - generic:
+                              - generic:
+                                - img
+                - generic [ref=f13e190]:
+                  - generic:
+                    - generic:
+                      - group "Font" [disabled]:
+                        - button "Bold" [disabled]:
+                          - generic:
+                            - generic:
+                              - img
+                        - button "Italic" [disabled]:
+                          - generic:
+                            - generic:
+                              - img
+                        - generic:
+                          - generic:
+                            - button "Font" [disabled]:
+                              - generic:
+                                - generic:
+                                  - img
+                - group "Paragraph Formatting" [ref=f13e196]:
+                  - group [ref=f13e197]:
+                    - button "Bullets" [disabled]:
+                      - generic:
+                        - generic:
+                          - img
+                    - button "Bullets Show More Options" [ref=f13e198]:
+                      - img [ref=f13e201]
+                  - group [ref=f13e204]:
+                    - button "Numbering" [disabled]:
+                      - generic:
+                        - generic:
+                          - img
+                    - button "Numbering Show More Options" [ref=f13e205]:
+                      - img [ref=f13e208]
+                  - button "Paragraph Formatting" [ref=f13e213]:
+                    - img [ref=f13e216]
+                - generic [ref=f13e221]:
+                  - generic:
+                    - generic:
+                      - group "Styles" [disabled]:
+                        - button "Styles" [disabled]:
+                          - generic:
+                            - generic:
+                              - img
+                            - generic:
+                              - img
+                - generic [ref=f13e224]:
+                  - generic:
+                    - generic:
+                      - group "Tags" [disabled]:
+                        - generic:
+                          - button "Tags" [disabled]:
+                            - generic:
+                              - generic:
+                                - img
+                            - generic:
+                              - generic:
+                                - img
+                - generic [ref=f13e227]:
+                  - generic:
+                    - generic:
+                      - group "Spelling" [disabled]:
+                        - group [disabled]:
+                          - button "Spelling" [disabled]:
+                            - generic:
+                              - generic:
+                                - img
+                          - button "Spelling Show More Options" [disabled]:
+                            - generic:
+                              - generic:
+                                - img
+                - generic [ref=f13e230]:
+                  - generic:
+                    - generic:
+                      - group "Dictation" [disabled]:
+                        - button "Dictate" [disabled]:
+                          - generic:
+                            - generic:
+                              - img
+                - group "Feed" [ref=f13e236]:
+                  - button "Feed" [ref=f13e237]:
+                    - img [ref=f13e240]
+                - group "Find" [ref=f13e249]:
+                  - button "Find" [ref=f13e250]:
+                    - img [ref=f13e253]
+                - group "More Options" [ref=f13e262]:
+                  - button "More Options" [ref=f13e265]:
+                    - img [ref=f13e268]
+              - button "Ribbon Display Options" [ref=f13e275]:
+                - img [ref=f13e278]
+        - main "Page Contents" [ref=f13e287]:
+          - generic "Click here or press ENTER to create a new section." [ref=f13e288]:
+            - generic [ref=f13e291]:
+              - paragraph [ref=f13e293]: This notebook is empty.
+              - paragraph [ref=f13e295]:
+                - link "Click here or press ENTER to create a new section." [ref=f13e296]:
+                  - /url: "#"
+        - generic [ref=f13e302]:
+          - generic [ref=f13e310]:
+            - button "Hide Navigation" [ref=f13e311] [cursor=pointer]:
+              - img [ref=f13e312]
+            - button "Show Search Pane" [ref=f13e318] [cursor=pointer]:
+              - img [ref=f13e319]
+            - button "Get Mobile App. Select to open QR code dialog to download mobile app" [ref=f13e324] [cursor=pointer]:
+              - img [ref=f13e325]
+          - navigation "Use this panel to select notebooks, sections and pages." [ref=f13e337]:
+            - generic [ref=f13e339]:
+              - button "Note_20260605_193736, Notebook. Select to switch to this notebook." [ref=f13e340]:
+                - img [ref=f13e342]
+                - generic [ref=f13e347]:
+                  - generic [ref=f13e348]: Note_20260605_193736
+                  - generic [ref=f13e349]: 
+              - generic [ref=f13e350]:
+                - generic "Section List" [ref=f13e351]:
+                  - button "Add section" [ref=f13e352] [cursor=pointer]:
+                    - generic [ref=f13e353]:
+                      - img [ref=f13e354]
+                      - text: Add section
+                  - tree [ref=f13e357]
+                - generic "Page List" [ref=f13e359]:
+                  - button "Add page" [ref=f13e360] [cursor=pointer]:
+                    - generic [ref=f13e361]:
+                      - img [ref=f13e362]
+                      - text: Add page
+                  - tree [ref=f13e365]
+          - generic [ref=f13e369]:
+            - generic [ref=f13e372]: Search
+            - textbox "Search this notebook (Ctrl+E)" [ref=f13e374]
+        - generic [ref=f13e379]:
+          - list "Math Assistant" [ref=f13e380]:
+            - generic [ref=f13e381]: Math Assistant
+            - button "Close" [ref=f13e382]
+          - list "Math Options" [ref=f13e387]:
+            - generic [ref=f13e388]: Math Options
+            - button "Close" [ref=f13e389]
+          - generic:
+            - generic [ref=f13e394]: Immersive Reader
+            - button "Close" [ref=f13e395]
+            - iframe [ref=f13e401]:
+              - main [active]
+      - 'button "😢EUPL: Invalid | TTI: Invalid" [ref=f13e402] [cursor=pointer]'
+```
